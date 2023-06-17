@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap') ;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.escurecer{
+    background-color: black;
+    background-image: url(../img/Study-room-books.jpg)brightness(black);
+}
+
+body{
+    background-color: #0a0a0afa;
+}
+
+.background-image-1{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(245, 245, 245, 0.973)),url(https://a-static.besthdwallpaper.com/black-hole-region-of-spacetime-wallpaper-3840x2160-108045_54.jpg);
+    background-size: cover;
+    all: center;
+}
+
+.background-image-2{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.959)),url(https://s2.glbimg.com/iliegsNCb3sjC7asag5FWd5M1I4=/e.glbimg.com/og/ed/f/original/2020/05/04/thought-catalog-505eectw54k-unsplash.jpg);
+    background-size: cover; 
+}
+
+.background-image-3{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(255, 255, 255)),url(https://blog.sesisenai.org.br/wp-content/uploads/sites/23/2021/09/shutterstock_329205053-scaled-3-1024x684.jpg);
+    background-size: cover; 
+}
+
+section,
+footer {
+    padding: 54px 0;
+}
+
+h3{
+    font-size: 50px;
+}
+
+p{
+    color: #ffffff;
+}
+nav#menu{
+    background-color: rgba(0, 0, 0, 0.76);
+    position: relative;
+    top: 10px;
+    padding: 10px;
+    width: 90vw;
+    border-radius: 10px;
+    
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+    background: transparent;
+    border: solid 2px #4f9fbd;
+    color: #4f9fbd;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+    width: 150px;
+    text-align: center;
+}
+
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+
+.btn:hover{
+    background-color: #317f9c;
+    color: rgb(255, 254, 254);
+}
+
+
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #317f9c;
+    }
+    to{
+        outline: 15px solid #31809c11;
+    }
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+}
+nav a span{
+    color: #4f9fbd;
+}
+
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    transition: 0.5s;
+}
+
+nav ul a:hover{
+    color: #4f9fbd;
+}
+
+nav ul a:not(.btn)::after{
+    content: "";
+    background-color: #4f9fbd;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+}
+
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+nav .close-icon{
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 98px;
+}
+
+.banner .banner-text h1{
+    font-size: 96px;
+    color:#00E17D;
+    background-color: rgba(0, 0, 0, 0.795);
+    border-radius: 30px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.banner .banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+/*Estude mais com Physic Book*/
+ 
+
+.estude-mais .container{
+    display: flex;
+    align-items: center;
+}
+
+.estude-mais .estude-mais-text{
+    width: 50%;
+    padding: 0 40px;
+}
+.estude-mais .estude-mais-text h3{
+    font-size: 56px;
+    color:#ffffff
+}
+.estude-mais .estude-mais-text p{
+    margin: 5px 0 10px 0;
+}
+
+.estude-mais .estude-mais-img{
+    width: 50%;
+}
+
+.estude-mais .estude-mais-img img{
+    width: 100%;
+}
+
+.depoimentos h3{
+    text-align: center;
+}
+
+.depoimentos p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.depoimentos .card-itens{
+    background-color: #00E17D;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.5s;
+}
+
+.depoimentos .card-itens img{
+    border-radius: 100%;
+    width: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+.depoimentos .card-itens .nome-user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+.depoimentos .card-itens .depoimento-user{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.5s;
+}
+
+.depoimentos .card-itens .estrelas{
+    margin: 15px 0;
+    border-top: 2px solid #71767a23;
+}
+
+.depoimentos .card-itens .estrelas i{
+    color: #06b968;
+    margin-top: 15px;
+    font-size: 20px;
+    transition: 0,5s;
+}
+
+.depoimentos .card-itens:hover{
+    background-color: #05af63;
+    margin-top: -5px;
+}
+
+.depoimentos .card-itens:hover .nome-user,
+.depoimentos .card-itens:hover .depoimento-user,
+.depoimentos .card-itens:hover .estrelas i{
+    color: white;
+}
+
+.plataforma h3,
+.plataforma p{
+    text-align: center;
+}
+
+.parceiros{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer{
+    background-color: #00E17D;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.footer i{
+    color: #00E17D;
+    font-size: 19px;
+    background-color: white;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.footer p{
+    margin-top: 10px;
+    color: white;
+}
+
+/*Página Estude*/
+.estude h3{
+    text-align: center;
+}
+
+.estude .container > p{
+    text-align: center;
+}
+
+.estude .rows-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.estude .rows-cards-itens{
+    background-color: #00E17D;
+    width: 350px;
+    padding: 20px;
+    border-radius: 14px;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.estude .rows-cards-itens:hover p{
+    color: white;
+    transition: 0.5s;
+}
+
+.estude .rows-cards-itens:hover{
+    background-color: #00E17D;
+}
+
+/*fim da Página Estude*/
+
+/*Página Sobre*/
+.sobre .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sobre .sobre-text{
+    width: 10%;
+    padding: 40px;
+}
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: #000000a6;
+}
+.sobre .sobre-img{
+    width: 90%;
+}
+.sobre .sobre-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+/*fim da Pagina Sobre*/
+
+@media(max-width: 830px){
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #104d63;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0.4% at 100% 0);
+        transition: 0.8s;
+    }
+    .ul.open{
+        clip-path: circle(120.7% at 100% 0);
+    }
+    .ul a{
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    nav .menu-icon{
+        display: block;
+    }
+    nav .close-icon{
+        display: block;
+        position: absolute;
+        top: 46px;
+        right: 28px;
+    }
+}
+
+.main-login {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 100px;
+  }
+
+  .main-login h2 {
+    text-align: center;
+  }
+
+  .main-login input[type="text"],
+  .main-login input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .main-login a{
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .main-login button:hover {
+    opacity: 0.8;
+  }
